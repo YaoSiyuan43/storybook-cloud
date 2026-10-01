@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>小云朵回家 · 互动电子绘本</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<canvas id="book" aria-label="绘本《小云朵回家》"></canvas>
+
+<button id="prev" class="nav" aria-label="上一页">‹</button>
+<button id="next" class="nav" aria-label="下一页">›</button>
+
+<div id="bar">
+  <button id="bRead" class="tool" title="自动朗读"><span>🗣️</span><em>朗读</em></button>
+  <button id="bMusic" class="tool" title="背景音乐"><span>🎵</span><em>音乐</em></button>
+  <button id="bSound" class="tool" title="声音"><span>🔔</span><em>声音</em></button>
+  <button id="bFull" class="tool" title="全屏"><span>⛶</span><em>全屏</em></button>
+</div>
+<div id="dots"></div>
+
+<div id="intro">
+  <div class="card">
+    <div class="sub">互动电子绘本</div>
+    <h1>小云朵回家</h1>
+    <p>点一点画里的小动物，它们会动、会叫、会说话哦！<br>拖动书页的角，或点两边的箭头来翻页。</p>
+    <button id="start">打开绘本 ▶</button>
+    <div class="tip">建议打开声音 · 适合 4–5 岁小朋友和爸爸妈妈一起读</div>
+  </div>
+</div>
+
+<script src="js/core.js"></script>
+<script src="js/characters.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/scenes-a.js"></script>
+<script src="js/scenes-b.js"></script>
+<script src="js/scenes-c.js"></script>
+<script src="js/scenes-d.js"></script>
+<script>window.SB.SCENES = window.SB.DEF.slice();</script>
+<script src="js/book.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+.ttsenv/
+.venv/
+__pycache__/
+audio/.gen_cache.json
+samples/
+.DS_Store
+*.log
+.shots/
